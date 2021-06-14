@@ -1,0 +1,15 @@
+
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+  datasource:
+    validation-query: SELECT 1
+    test-while-idle: true
+    hikari:
+      maximum-pool-size: 50
+      connection-timeout: 20000
+      idle-timeout: 600000
+      max-lifetime: 30000
+      minimumIdle: 20
